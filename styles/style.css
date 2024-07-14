@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -36,3 +36,14 @@ ul,
 ol {
   list-style: none;
 }
+
+/* main container */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* right side */
+
+/* left side */
