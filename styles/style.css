@@ -41,7 +41,10 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 711px auto;
+  gap: 30px;
+  max-width: 1140px;
+  margin: auto;
 }
 
 /* right side */
