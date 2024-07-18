@@ -12,6 +12,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
+  padding: 133px 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -37,6 +38,15 @@ ol {
   list-style: none;
 }
 
+.button {
+  background: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 /* main container */
 
 .content {
@@ -44,9 +54,29 @@ ol {
   grid-template-columns: 711px auto;
   gap: 30px;
   max-width: 1140px;
-  margin: auto;
+  max-height: 534px;
 }
 
 /* right side */
 
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  min-width: 711px;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 40px
+}
+
 /* left side */
+
