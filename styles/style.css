@@ -47,7 +47,7 @@ ol {
   color: #fff;
 }
 
-/* main container */
+/* главный контейнер */
 
 .content {
   display: grid;
@@ -57,7 +57,7 @@ ol {
   max-height: 534px;
 }
 
-/* right side */
+/* правая часть */
 
 .result {
   display: flex;
@@ -78,5 +78,43 @@ ol {
   gap: 40px
 }
 
-/* left side */
+/* левая часть */
 
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 399px;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #545050;
+}
+
+.content__list {
+  height: 298px;
+  overflow: scroll ;
+
+}
+
+/*карточка видео*/
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-list-item-template {
+
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
