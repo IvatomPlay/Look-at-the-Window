@@ -38,15 +38,6 @@ ol {
   list-style: none;
 }
 
-.button {
-  background: none;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
 /* главный контейнер */
 
 .content {
@@ -55,6 +46,31 @@ ol {
   gap: 30px;
   max-width: 1140px;
   max-height: 534px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background: none;
+}
+
+.visually-hidden {
+  position: absolute; 
+  width: 1px; 
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 /* правая часть */
@@ -66,16 +82,61 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
+  inset: 0;
   min-width: 711px;
+  min-height: 386px;
 }
 
 .result__video {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.serch-form__fieldset {
   display: flex;
-  gap: 40px
+  flex-direction: column;
+  gap: 6px;
+  border: none;
+}
+
+.serch-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__label {
+  width: fit-content;
+}
+
+.search-form__label-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__textfield {
+  min-width: 225px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  outline: 0;
+  opacity: 0.7;
+  background: none;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  appearance: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* левая часть */
@@ -99,22 +160,36 @@ ol {
 
 .content__list {
   height: 298px;
-  overflow: scroll ;
-
+  overflow: scroll;
 }
 
 /*карточка видео*/
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.card-list-item-template {
-
-}
-
 .content__video-card {
   display: grid;
   grid-template-columns: 200px auto;
+  margin-bottom: 30px;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.content__video-card-title {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.contentent__video-card-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content__video-card-thumbnail {
+  width: 100%;
+  object-fit: cover;
 }
