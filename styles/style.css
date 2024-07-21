@@ -171,6 +171,7 @@ a {
 }
 
 .search-form__pseudo-checkbox {
+  position: relative;
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -227,6 +228,7 @@ a {
 }
 
 .content__list {
+  position: relative;
   height: 298px;
   overflow: auto;
 }
