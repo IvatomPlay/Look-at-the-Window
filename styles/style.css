@@ -9,7 +9,7 @@ html {
 }
 
 .page {
-  display: grid;
+display: grid;  
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -247,7 +247,7 @@ a {
 
 /* чтобы первая карточка в списке подсвечивалась */
 
-.content__card-link-current:active {
+.content__card-link-current {
   background-color: #545050;
 }
 
