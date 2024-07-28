@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-display: grid;  
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -45,7 +44,8 @@ ol {
   grid-template-columns: 711px auto;
   gap: 30px;
   max-width: 1140px;
-  margin: auto;
+  max-height: 534px;
+  margin: 133px 30px;
 }
 
 a {
@@ -232,6 +232,7 @@ a {
 
 /* .content__list-item {
   background-color: red;
+  margin-bottom: 0;
 } */
 
 .content__card-link {
@@ -247,14 +248,13 @@ a {
 
 /* чтобы первая карточка в списке подсвечивалась */
 
-.content__card-link-current {
+.content__card-link_current {
   background-color: #545050;
 }
 
 /*карточка видео*/
 
 .content__video-card {
-  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 200px auto;
   &:hover {
@@ -266,8 +266,8 @@ a {
   }
 }
 
-.content__list-item:last-child {
-  margin-bottom: 0;
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__video-card-description-container {
