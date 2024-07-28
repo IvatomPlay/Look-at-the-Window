@@ -44,8 +44,8 @@ ol {
   grid-template-columns: 711px auto;
   gap: 30px;
   max-width: 1140px;
-  max-height: 534px;
-  margin: 133px 30px;
+  padding-top: 133px;
+  margin: auto;
 }
 
 a {
