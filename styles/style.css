@@ -9,7 +9,7 @@ html {
 }
 
 .page {
-  display: grid;
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -42,10 +42,12 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px auto;
+  grid-template-columns: 711px 399px;
+  justify-content: center;
+  align-self: center;
   gap: 30px;
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 a {
@@ -229,11 +231,6 @@ a {
   height: 298px;
   overflow: auto;
 }
-
-/* .content__list-item {
-  background-color: red;
-  margin-bottom: 0;
-} */
 
 .content__card-link {
   display: block;
