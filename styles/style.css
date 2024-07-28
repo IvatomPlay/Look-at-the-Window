@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: grid;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -44,7 +45,6 @@ ol {
   grid-template-columns: 711px auto;
   gap: 30px;
   max-width: 1140px;
-  padding-top: 133px;
   margin: auto;
 }
 
